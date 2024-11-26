@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 type Product = {
@@ -113,9 +114,11 @@ export default function Home() {
                   className='border-b hover:bg-green-50 transition-colors'
                 >
                   <td className='p-3'>
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
+                      width={100}
+                      height={100}
                       className='w-16 h-16 object-cover rounded'
                     />
                   </td>
