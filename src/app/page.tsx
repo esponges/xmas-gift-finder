@@ -46,7 +46,7 @@ export default function Home() {
     })
       .then((res) => res.json())
       .then((data: Product[]) => {
-        // setProducts(data);
+        setProducts(data);
         console.log(data);
       })
       .catch((err) => {
